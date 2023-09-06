@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+<body>
+    <h1>Logout Page</h1>
+    <p>You have successfully logged out.</p>
+    
+    <!-- Add a logout button -->
+    <form action="/logout/" method="post">
+        {% csrf_token %}
+        {% comment %} <button type="submit">Logout</button> {% endcomment %}
+        <a href="{% url 'login' %}" >Log In</a>
+    </form>
+</body>
+</html>
+
+
+
+
+
+

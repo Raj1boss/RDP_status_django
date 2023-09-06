@@ -1,6 +1,7 @@
 from .models import user_rdp
 from django import forms
-
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 class RDPRegistration(forms.ModelForm):
     class Meta:
@@ -15,6 +16,12 @@ class RDPRegistration(forms.ModelForm):
             }
         
         
-        
+
+
+    
+    
+            
+            
+      
         
 

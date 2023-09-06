@@ -20,6 +20,9 @@ from app1 import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('signup/',views.SignupPage,name='signup'),
+    path('login/',views.LoginPage,name='login'),
+    path('logout/',views.LogoutPage,name='logout'),
     path('',views.add_show,name='addandshow'),
     path('delete/<int:id>/',views.delete_item,name='deletedata'),
     path('<int:id>/',views.update_data,name='update')
